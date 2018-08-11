@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  heroe:any = ['ulises','ulises','ulises','ulises','ulises','ulises','ulises'];
 }

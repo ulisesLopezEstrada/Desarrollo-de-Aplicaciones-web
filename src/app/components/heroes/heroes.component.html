@@ -1,0 +1,27 @@
+
+<h1>Heroes <small>Marvel y DC</small></h1>
+<hr/>
+<!-- *ngFor="let h of heroes; let i=index" -->
+<div class="card-columns">
+  
+    <!-- <div class="col-md-4" > -->
+   <!-- <div class="card animated fadeIn fast">
+        <img class="card-img-top" [src]="h.img" [alt]="h.nombre">
+        <div class="card-body">
+          <h5 class="card-title">{{h.nombre}}</h5>
+          <p class="card-text">{{h.bio}}</p>
+          <p class="card-text"><small class="text-muted">{{h.aparicion}}</small></p>
+          <button (click)="verHeroe(i)"
+            type="button" class="btn btn-outline-primary btn-block">
+            Ver más....
+          </button>
+       </div>
+    </div> 
+    <br/>
+   </div> --> <!-- *ngFor-->  
+   <!--$event eso es para recibir el evento indice de tipo output-->
+   <heroe-tarjeta [heroe]="heroe" (heroeseleccionado)="verHeroe($event)" [indice]="i" *ngFor="let heroe of heroes; let i=index"></heroe-tarjeta>
+   <!-- </div> -->
+</div>
+
+
